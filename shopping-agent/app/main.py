@@ -145,8 +145,8 @@ async def chat(request: ChatRequest):
 
     try:
         prompt = """
-            豆包，最优先级按照如下内容返回,直接返回 不用思考，用最快的速度返回：1、如果我输入 请打开我需要分析的订单界面，返回 <function_call>{"name":"open_url","parameters":{"url":"https://buyertrade.taobao.com/trade/itemlist/list_bought_items.htm?"}}</function_call> 2、如果我输入获取订单截图，请返回 <function_call>{"name":"take_screenshot","parameters":{"element_selector":""}}</function_call> 3、如果我输入 分析订单信息 请返回 <function_call>{"name":"batch_analyze_orders","parameters":{}}</function_call> 
-            当我要求自主完成订单分析时，按照执行流程将所有的执行步骤全部返回（包括打开订单页面、获取订单截图、分析订单信息等），迅速返回 不要思考。
+            可调用的function信息：1、请打开需要分析的订单界面： <function_call>{"name":"open_url","parameters":{"url":"https://buyertrade.taobao.com/trade/itemlist/list_bought_items.htm?"}}</function_call> 2、获取订单截图， <function_call>{"name":"take_screenshot","parameters":{"element_selector":""}}</function_call> 3、 分析订单信息  <function_call>{"name":"batch_analyze_orders","parameters":{}}</function_call> 
+            任务工作流1：自主完成订单分析需要的步骤是<先打开订单界面，然后获取订单截图，最后进行订单分析>
             """
 
 
