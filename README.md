@@ -19,6 +19,7 @@ ShoppingAgent是一个智能订单分析Agent，能够通过浏览器自动化�
 
 - Python 3.8+
 - Google Chrome浏览器（版本140.0及以上，建议使用最新稳定版）
+- 下载Chrome驱动，下载地址见dist/resourece文件夹下
 
 ### 安装步骤
 
