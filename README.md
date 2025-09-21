@@ -123,5 +123,5 @@ pillow>=10.0.1          # 图像处理
 selenium>=4.14.0        # 浏览器自动化（兼容Chrome 112+）
 webdriver-manager>=4.0.1 # WebDriver管理（自动匹配Chrome版本）
 
-# 图像处理与OCR辅助
+# 图像处理与多模态理解
 python-multipart>=0.0.6 # 处理multipart表单数据
