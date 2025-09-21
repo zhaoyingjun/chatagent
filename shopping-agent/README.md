@@ -29,9 +29,13 @@ ShoppingAgent是一个智能订单分析Agent，能够通过浏览器自动化�
    pip install -r requirements.txt
    ```
 3.需要在config.py完成大模型API的配置，以豆包为例配置如下：
+
 MIDSCENE_MODEL_NAME = 'doubao-seed-1-6-250615'
+
 OPENAI_BASE_URL = 'https://ark.cn-beijing.volces.com/api/v3'
+
 OPENAI_API_KEY = '填写你的OPENAI_API_KEY'
+
 或者可以先启动应用，在前端页面的系统配置项中配置。
 
 ### 启动应用
