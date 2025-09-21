@@ -40,7 +40,7 @@ class ChatRequest(BaseModel):
     history: list = []  # 用于存储聊天历史，格式为[{"role": "user", "content": "..."}, ...]
 
 def call_doubao_model(message: str, history: list = None) -> str:
-    """调用豆包模型获取回复"""
+    """调用大模型获取回复"""
     try:
         # 如果没有提供历史记录，初始化一个空列表
         history = history or []
