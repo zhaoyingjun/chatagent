@@ -9,7 +9,7 @@ SERVER_HOST = 'localhost'
 SERVER_PORT = '8000'
 FRONTEND_PORT = '8501'
 
-# 豆包模型配置
+# 模型配置
 MIDSCENE_MODEL_NAME = 'doubao-seed-1-6-250615'
 OPENAI_BASE_URL = 'https://ark.cn-beijing.volces.com/api/v3'
 OPENAI_API_KEY = ''
@@ -24,4 +24,5 @@ CHROME_DRIVER_PATH = './dist/resources/chromedriver.exe'
 
 # 确保目录存在
 os.makedirs(SCREENSHOTS_DIR, exist_ok=True)
+
 os.makedirs(EXCELS_DIR, exist_ok=True)
